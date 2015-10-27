@@ -10,7 +10,7 @@
 
 using namespace std;
 
-int detremine(long k)
+int determine(long k)
 {
     while ( (k % 4) != 3 && (k%2 == 0 && k > 4)) k >>=1;
     
@@ -23,7 +23,7 @@ int main(int argc, const char * argv[])
     cin >> tc;
     for(i=1;i<=tc;++i) {
         cin >> k;
-        cout << "Case #"<<i<<":"<<" "<<detremine(k)<<endl;
+        cout << "Case #"<<i<<":"<<" "<<determine(k)<<endl;
     }
     
     return 0;
